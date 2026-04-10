@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   
   // Check if user is authenticated by looking for auth cookie
@@ -13,7 +13,6 @@ export function middleware(request: NextRequest) {
 
   // If trying to access protected route without auth, redirect to login
   if (!publicRoutes.includes(pathname) && !isAuthenticated) {
-    // Check localStorage approach - redirect to login
     if (pathname.startsWith('/dashboard') || 
         pathname.startsWith('/appointment') || 
         pathname.startsWith('/medical-history') ||
