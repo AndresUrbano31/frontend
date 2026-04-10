@@ -110,7 +110,7 @@ export default function AppointmentPage() {
   if (loading && specialties.length === 0) return <LoadingSpinner />;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8">
+    <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 py-8">
       <div className="max-w-2xl mx-auto px-4">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">📅 Agendar Cita Médica</h1>
         <p className="text-gray-600 mb-8">Proceso guiado en 4 pasos simples</p>
@@ -136,7 +136,7 @@ export default function AppointmentPage() {
               <div
                 className={`py-3 px-2 rounded-lg font-bold text-center transition-all ${
                   step === s
-                    ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white shadow-lg scale-105'
+                    ? 'bg-linear-to-r from-purple-600 to-purple-700 text-white shadow-lg scale-105'
                     : step > s
                       ? 'bg-green-500 text-white shadow-md'
                       : 'bg-gray-300 text-gray-700'
@@ -279,7 +279,7 @@ export default function AppointmentPage() {
                           onClick={() => setSelectedTime(slot)}
                           className={`p-3 border-2 rounded-lg font-semibold transition-all ${
                             selectedTime === slot
-                              ? 'bg-gradient-to-r from-purple-600 to-purple-700 text-white border-purple-600 shadow-lg'
+                              ? 'bg-linear-to-r from-purple-600 to-purple-700 text-white border-purple-600 shadow-lg'
                               : 'border-gray-200 text-gray-700 hover:border-purple-300 hover:bg-purple-50'
                           }`}
                         >
@@ -313,7 +313,7 @@ export default function AppointmentPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               ✓ Paso 4: Confirmar Cita
             </h2>
-            <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl p-6 space-y-4 mb-8 border-2 border-purple-200">
+            <div className="bg-linear-to-r from-purple-50 to-purple-100 rounded-xl p-6 space-y-4 mb-8 border-2 border-purple-200">
               <div className="flex items-start gap-3 pb-4 border-b border-purple-200">
                 <span className="text-2xl">🏥</span>
                 <div>

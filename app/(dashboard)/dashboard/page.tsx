@@ -42,7 +42,7 @@ export default function DashboardPage() {
   if (loading) return <LoadingSpinner />;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8">
+    <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 py-8">
       <div className="max-w-7xl mx-auto px-4">
         {/* Welcome Section */}
         <div className="mb-8">
@@ -90,7 +90,7 @@ export default function DashboardPage() {
                 {upcomingAppointments.map((apt) => (
                   <div
                     key={apt.id}
-                    className="border-l-4 border-purple-500 bg-gradient-to-r from-purple-50 to-transparent p-4 rounded-lg hover:shadow-md transition-shadow"
+                    className="border-l-4 border-purple-500 bg-linear-to-r from-purple-50 to-transparent p-4 rounded-lg hover:shadow-md transition-shadow"
                   >
                     <h3 className="font-bold text-gray-900 text-lg">{apt.doctorName}</h3>
                     <p className="text-sm text-purple-600 font-semibold">{apt.specialty}</p>

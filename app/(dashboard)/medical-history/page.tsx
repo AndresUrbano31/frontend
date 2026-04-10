@@ -35,10 +35,10 @@ export default function MedicalHistoryPage() {
   if (loading) return <LoadingSpinner />;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-white p-4 md:p-8">
+    <div className="min-h-screen bg-linear-to-br from-purple-50 to-white p-4 md:p-8">
       <div className="max-w-4xl mx-auto">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent mb-2">
+          <h1 className="text-4xl font-bold bg-linear-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent mb-2">
             📋 Historia Clínica Completa
           </h1>
           <p className="text-gray-600">Acceda a sus consultas, prescripciones y laboratorios</p>
@@ -63,7 +63,7 @@ export default function MedicalHistoryPage() {
           >
             📋 Consultas
             {activeTab === 'consultations' && (
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 to-purple-700"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-purple-600 to-purple-700"></div>
             )}
           </button>
           <button
@@ -76,7 +76,7 @@ export default function MedicalHistoryPage() {
           >
             💊 Prescripciones
             {activeTab === 'prescriptions' && (
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 to-purple-700"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-purple-600 to-purple-700"></div>
             )}
           </button>
           <button
@@ -89,7 +89,7 @@ export default function MedicalHistoryPage() {
           >
             🧪 Laboratorios
             {activeTab === 'labs' && (
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 to-purple-700"></div>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-purple-600 to-purple-700"></div>
             )}
           </button>
         </div>
@@ -142,7 +142,7 @@ export default function MedicalHistoryPage() {
                   {data.prescriptions.map((prescription: Prescription) => (
                     <div
                       key={prescription.id}
-                      className="border-2 border-green-200 rounded-xl p-6 hover:border-green-400 hover:shadow-md transition-all bg-gradient-to-r from-green-50 to-transparent"
+                      className="border-2 border-green-200 rounded-xl p-6 hover:border-green-400 hover:shadow-md transition-all bg-linear-to-r from-green-50 to-transparent"
                     >
                       <h3 className="font-bold text-lg text-gray-900 mb-4">
                         💊 {prescription.medicationName}
@@ -184,7 +184,7 @@ export default function MedicalHistoryPage() {
                 {data.labRequests.map((lab: LabRequest) => (
                   <div
                     key={lab.id}
-                    className="border-2 border-blue-200 rounded-xl p-6 hover:border-blue-400 hover:shadow-md transition-all bg-gradient-to-r from-blue-50 to-transparent"
+                    className="border-2 border-blue-200 rounded-xl p-6 hover:border-blue-400 hover:shadow-md transition-all bg-linear-to-r from-blue-50 to-transparent"
                   >
                     <div className="flex justify-between items-start mb-4 pb-4 border-b border-blue-100">
                       <h3 className="font-bold text-lg text-gray-900">

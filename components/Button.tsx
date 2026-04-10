@@ -17,7 +17,7 @@ export function Button({
   const widthClass = fullWidth ? 'w-full' : '';
   
   const variantClasses = {
-    primary: 'bg-gradient-to-r from-purple-600 to-purple-700 text-white hover:from-purple-700 hover:to-purple-800 focus:ring-4 focus:ring-purple-300 disabled:from-gray-400 disabled:to-gray-500',
+    primary: 'bg-linear-to-r from-purple-600 to-purple-700 text-white hover:from-purple-700 hover:to-purple-800 focus:ring-4 focus:ring-purple-300 disabled:from-gray-400 disabled:to-gray-500',
     secondary: 'bg-gray-100 text-gray-800 hover:bg-gray-200 focus:ring-4 focus:ring-gray-200 disabled:bg-gray-300 disabled:text-gray-500',
     danger: 'bg-red-600 text-white hover:bg-red-700 focus:ring-4 focus:ring-red-300 disabled:bg-gray-400',
   };

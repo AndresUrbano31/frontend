@@ -83,10 +83,10 @@ export default function LabResultsPage() {
   if (loading) return <LoadingSpinner />;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-white p-4 md:p-8">
+    <div className="min-h-screen bg-linear-to-br from-purple-50 to-white p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent mb-2">
+          <h1 className="text-4xl font-bold bg-linear-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent mb-2">
             🧬 Resultados de Laboratorio
           </h1>
           <p className="text-gray-600">Solicite exámenes y vea sus resultados</p>

@@ -15,7 +15,7 @@ export function Navigation() {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-purple-600 to-purple-800 text-white shadow-xl">
+    <nav className="bg-linear-to-r from-purple-600 to-purple-800 text-white shadow-xl">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-8">
           <Link href="/dashboard" className="font-bold text-xl flex items-center gap-2">
